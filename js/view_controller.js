@@ -10,7 +10,7 @@
 */
 
 // Modul Ablaufsteuerung | Test:
-controller();
+// controller();
 function controller() {
     output(updateImg(checkAge(getInput())));
 }
@@ -30,11 +30,11 @@ function checkAge(age) {
     switch (true) {
         case (age >= data.milk.lower) && (age <= data.milk.upper) :
             return data.milk.bev;
-        case (age >= data.juice.lower) && (age <= data.juice.lower):
+        case (age >= data.juice.lower) && (age <= data.juice.upper):
             return data.juice.bev;
-        case (age >= data.cola.lower) && (age <= data.cola.lower):
+        case (age >= data.cola.lower) && (age <= data.cola.upper):
             return data.cola.bev;
-        case (age >= data.wine.lower) && (age <= data.wine.lower):
+        case (age >= data.wine.lower) && (age <= data.wine.upper):
             return data.wine.bev;
         default:
             return data.default.bev;
