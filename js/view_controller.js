@@ -17,10 +17,6 @@ function controller() {
     output(updateImg(checkAge(getInput())));
 }
 
-// 5c. Trigger - BtnClick 
-const btn = document.getElementById("trigBtn");
-btn.addEventListener("click",actOnClick);
-
 // 5b. Event-Dispatcher
 function actOnClick() {
     if (isInputValid()) {
@@ -29,6 +25,11 @@ function actOnClick() {
         output("Input nicht korrekt!");
     }
 }
+
+// 5c. Trigger - BtnClick 
+const btn = document.getElementById("trigBtn");
+btn.addEventListener("click",actOnClick);
+
 
 /***  Eingabe | Check auf Datenintegrität */  
 
